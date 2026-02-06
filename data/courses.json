@@ -1,0 +1,53 @@
+[
+  {
+    "id": "CS101",
+    "name": "Introduction to Computer Science",
+    "capacity": 30,
+    "instructor_id": "prof1",
+    "time_slot": {
+      "weekday": 1,
+      "start_time": "09:00",
+      "duration": 90
+    }
+  },
+  {
+    "id": "CS201",
+    "name": "Data Structures and Algorithms",
+    "capacity": 25,
+    "instructor_id": "prof1",
+    "time_slot": {
+      "weekday": 3,
+      "start_time": "14:00",
+      "duration": 90
+    }
+  },
+  {
+    "id": "MATH101",
+    "name": "Calculus I",
+    "capacity": 40,
+    "instructor_id": "prof2",
+    "time_slot": {
+      "weekday": 2,
+      "start_time": "10:00",
+      "duration": 75
+    }
+  },
+  {
+    "id": "MATH201",
+    "name": "Linear Algebra",
+    "capacity": 20,
+    "instructor_id": "prof2",
+    "time_slot": null
+  },
+  {
+    "id": "CSC303",
+    "name": "Algorithms",
+    "time_slot": {
+      "weekday": 1,
+      "start_time": "09:00",
+      "duration": 2
+    },
+    "capacity": 50,
+    "instructor_id": "admin1"
+  }
+]
