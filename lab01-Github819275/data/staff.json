@@ -1,0 +1,17 @@
+[
+  {
+    "user_id": "prof1",
+    "name": "Dr. Sarah Wilson",
+    "department": "Computer Science"
+  },
+  {
+    "user_id": "prof2", 
+    "name": "Dr. Michael Brown",
+    "department": "Mathematics"
+  },
+  {
+    "user_id": "admin1",
+    "name": "Jane Admin",
+    "department": "Administration"
+  }
+]

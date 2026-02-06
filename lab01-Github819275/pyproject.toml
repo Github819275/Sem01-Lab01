@@ -1,0 +1,57 @@
+[project]
+name = "lab01-course-management"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "click>=8.1.8",
+    "pydantic>=2.11.4",
+    "pyrefly>=0.25.0",
+    "pytest>=8.3.5",
+    "pytest-cov>=6.1.1",
+    "ruff>=0.11.9",
+]
+
+# Ruff section
+[tool.ruff]
+line-length = 120  # Max line length
+exclude = ["tests"]
+force-exclude = true  # For pre-commit, exclude all files except those explicitly included
+
+[tool.ruff.lint]
+# Turn on the main rule families you’re likely to want
+select = [
+  "E",   # pycodestyle errors
+  "F",   # Pyflakes
+  "I",   # isort import-ordering
+  "B",   # flake8-bugbear
+  "UP",  # pyupgrade
+  "N",   # pep8-naming
+  "D",   # pydocstyle  ← enforces docstrings
+  "C4",  # flake8-comprehensions
+  "SIM", # flake8-simplify
+  "ARG", # flake8-unused-arguments
+  "ANN", # flake8-annotations
+  "S",    # Bandit (security)
+]
+ignore = ["D2", "D4", "F401"]
+
+[tool.pyrefly]
+project-includes = ["src/**/*.py"]
+
+[tool.pytest.ini_options]
+testpaths = [
+  # Part 1: DTOs
+  "tests/core/test_dto.py",
+
+  # Part 2: Storage Layer
+  "tests/core/storage/*.py",
+
+  # Part 3: Domain Layer
+  "tests/core/test_storage_system.py",
+  "tests/core/test_entities.py",
+
+  # Part 4: Services & Exceptions (all tests should pass)
+  "tests"
+]
